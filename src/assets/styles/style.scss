@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("./components/_scrollbar.scss");
+@import url("./components/_nprogress.scss");
+@import url("./components/_markdown.scss");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html.dark {
+  @apply bg-elucidator-900;
+}
+a {
+  @apply cursor-pointer;
+}

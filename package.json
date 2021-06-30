@@ -1,0 +1,60 @@
+{
+  "name": "elucidator-starter-blog",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --port 3333 --open",
+    "build": "cross-env NODE_ENV=production vite-ssg build",
+    "serve": "vite preview"
+  },
+  "author": "Satya Wikananda <satyawikananda456@gmail.com>",
+  "keywords": [
+    "blog",
+    "blog-starter",
+    "template-starter",
+    "typescript",
+    "vite",
+    "vue",
+    "windicss"
+  ],
+  "dependencies": {
+    "@iconify/iconify": "^2.0.2",
+    "@vueuse/core": "^4.11.2",
+    "@vueuse/head": "^0.5.1",
+    "nprogress": "^0.2.0",
+    "prism-theme-vars": "^0.2.2",
+    "vue": "^3.0.5",
+    "vue-disqus": "^5.1.0",
+    "vue-router": "^4.0.8",
+    "vue-social-sharing": "^4.0.0-alpha4"
+  },
+  "devDependencies": {
+    "@iconify/json": "^1.1.353",
+    "@types/node": "^15.12.2",
+    "@types/nprogress": "^0.2.0",
+    "@vitejs/plugin-vue": "^1.2.2",
+    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/server-renderer": "^3.0.11",
+    "cross-env": "^7.0.3",
+    "gray-matter": "^4.0.3",
+    "markdown-it-anchor": "^8.0.1",
+    "markdown-it-link-attributes": "^3.0.0",
+    "markdown-it-prism": "^2.1.6",
+    "markdown-it-table-of-contents": "^0.5.2",
+    "node-sass": "^6.0.0",
+    "prettier": "^2.3.2",
+    "prismjs": "^1.23.0",
+    "sass": "^1.35.0",
+    "sass-loader": "^12.1.0",
+    "typescript": "^4.1.3",
+    "vite": "^2.2.3",
+    "vite-plugin-components": "^0.10.4",
+    "vite-plugin-icons": "^0.6.1",
+    "vite-plugin-md": "^0.6.7",
+    "vite-plugin-pages": "^0.12.2",
+    "vite-plugin-purge-icons": "^0.7.0",
+    "vite-plugin-windicss": "^0.16.7",
+    "vite-ssg": "^0.11.2",
+    "vue-tsc": "^0.0.24",
+    "windicss": "^3.0.12"
+  }
+}

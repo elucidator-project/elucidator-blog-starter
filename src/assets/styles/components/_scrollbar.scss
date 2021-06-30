@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  @apply w-7px;
+  &:horizontal {
+    @apply h-7px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-md bg-elucidator-300 dark:bg-dark-repulser-300;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-elucidator-500 dark:bg-dark-repulser-500;
+  &:hover {
+    @apply bg-elucidator-700 dark:bg-dark-repulser-600;
+  }
+}

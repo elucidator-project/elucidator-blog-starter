@@ -1,0 +1,132 @@
+/* https://github.com/antfu/prism-theme-vars */
+@import "prism-theme-vars/base.css";
+
+:root {
+  --prism-font-size: 0.9rem;
+  --prism-font-family: "Fira Code", monospace;
+}
+
+html:not(.dark) {
+  --prism-foreground: #393a34;
+  --prism-background: #f8f8f8;
+
+  --prism-comment: #008000;
+  --prism-namespace: #4ec9b0;
+  --prism-string: #a31515;
+  --prism-punctuation: #393a34;
+  --prism-literal: #36acaa;
+  --prism-keyword: #0000ff;
+  --prism-function: #393a34;
+  --prism-deleted: #9a050f;
+  --prism-class: #2b91af;
+  --prism-builtin: #ce9178;
+  --prism-property: #2b91af;
+  --prism-regex: #ff0000;
+}
+
+html.dark {
+  --prism-foreground: #d4d4d4;
+  --prism-background: #1e1e1e;
+
+  --prism-comment: #6a9955;
+  --prism-namespace: #4ec9b0;
+  --prism-string: #ce9178;
+  --prism-punctuation: #d4d4d4;
+  --prism-literal: #36acaa;
+  --prism-keyword: #569cd6;
+  --prism-function: #dcdcaa;
+  --prism-deleted: #ce9178;
+  --prism-class: #4ec9b0;
+  --prism-builtin: #ce9178;
+  --prism-property: #b5cea8;
+  --prism-regex: #d16969;
+}
+
+.article-body {
+  @apply text-elucidator-800 dark:text-elucidator-200;
+  @apply leading-relaxed;
+
+  h1:hover .header-anchor,
+  h1:focus .header-anchor,
+  h2:hover .header-anchor,
+  h2:focus .header-anchor,
+  h3:hover .header-anchor,
+  h3:focus .header-anchor,
+  h4:hover .header-anchor,
+  h4:focus .header-anchor,
+  h5:hover .header-anchor,
+  h5:focus .header-anchor,
+  h6:hover .header-anchor,
+  h6:focus .header-anchor {
+    opacity: 0.5;
+  }
+
+  p {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  a {
+    &:not(.table-of-contents) {
+      font-weight: 600;
+      transition: all 0.3s ease;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &.header-anchor {
+      float: left;
+      margin-top: 0.125em;
+      margin-left: -1.5em;
+      font-size: 0.85em;
+      opacity: 0;
+      text-decoration: none;
+      border: 0 !important;
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .table-of-contents {
+    @apply border-1 rounded border-elucidator-200 w-full md:w-11/12 lg:w-3/6 p-4 leading-loose;
+    a {
+      @apply font-bold;
+    }
+  }
+  ul {
+    @apply list-disc mb-5;
+    li {
+      @apply relative ml-5;
+    }
+  }
+
+  img {
+    @apply rounded shadow w-11/12 m-auto;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0 1em;
+    opacity: 0.8;
+    border-left: 0.25em solid #63c0b6;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  pre {
+    @apply mb-5;
+  }
+
+  code {
+    font-family: monospace;
+    @apply break-words decoration-clone p-1 rounded bg-elucidator-400 text-gray-700;
+  }
+}
