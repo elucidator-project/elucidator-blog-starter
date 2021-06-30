@@ -96,7 +96,12 @@ const dataNavbar: NavbarMenu[] = [
           tabindex="0"
           @click="setSearch"
         />
-        <a href="https://github.com/satyawikananda/elucidator-blog-starter" target="_blank">
+        <a
+          href="https://github.com/satyawikananda/elucidator-blog-starter"
+          target="_blank"
+          rel="noreferrer"
+          title="repository github"
+        >
           <uil-github
             class="mr-5 flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
             tabindex="0"
