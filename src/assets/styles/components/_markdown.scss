@@ -95,6 +95,9 @@ html.dark {
     a {
       @apply font-bold;
     }
+    ul {
+      @apply mb-0;
+    }
   }
   ul {
     @apply list-disc mb-5;
@@ -127,6 +130,8 @@ html.dark {
 
   code {
     font-family: monospace;
-    @apply break-words decoration-clone p-1 rounded bg-elucidator-400 text-gray-700;
+    &:not([class]) {
+      @apply break-words decoration-clone p-1 rounded bg-elucidator-400 text-gray-700;
+    }
   }
 }
