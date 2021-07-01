@@ -71,6 +71,10 @@ Elucidator is a kirito's sword from the anime [Sword Art Online(SAO)](https://an
 
 Want this project make better? you can contributing in this project to, contribution are welcome :D
 
+# License
+
+Code licensed under [MIT License](https://raw.githubusercontent.com/satyawikananda/elucidator-blog-starter/main/LICENSE?token=AH44ZFFKVJSTLJ3SXJUPKHDA3VAJG).
+
 # Credit
 
 This starter was heavily inspired by [Anthony Fu's](https://github.com/antfu) [Vitesse](https://github.com/antfu/vitesse).
