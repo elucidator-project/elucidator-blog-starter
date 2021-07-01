@@ -18,12 +18,16 @@ const relatedArticles = computed(() => {
 
 const router = useRoute()
 const routes = router.fullPath
+let url: string = ""
+if (typeof window !== "undefined") {
+  url = window.location.origin + routes
+}
 const dataShare: DataShare[] = [
   {
     icon: "facebook",
     network: "facebook",
     name: "Facebook",
-    url: window.location.origin + routes,
+    url: url,
     title: frontmatter.name,
     description: frontmatter.description,
     hashtags: "test",
@@ -32,7 +36,7 @@ const dataShare: DataShare[] = [
     icon: "twitter",
     network: "twitter",
     name: "Twitter",
-    url: window.location.origin + routes,
+    url: url,
     title: frontmatter.name,
     hashtags: "test",
   },
@@ -40,7 +44,7 @@ const dataShare: DataShare[] = [
     icon: "whatsapp",
     network: "whatsapp",
     name: "Whatsapp",
-    url: window.location.origin + routes,
+    url: url,
     description: frontmatter.description,
     title: frontmatter.name,
   },
@@ -48,7 +52,7 @@ const dataShare: DataShare[] = [
     icon: "telegram",
     network: "telegram",
     name: "Telegram",
-    url: window.location.origin + routes,
+    url: url,
     description: frontmatter.description,
     title: frontmatter.name
   },
@@ -129,7 +133,9 @@ if (isClient) {
       />
     </div>
     <div class="mt-5 mb-5">
-      <Disqus />
+      <client-only>
+        <Disqus />
+      </client-only>
     </div>
     <div class="flex flex-wrap flex-col px-4 lg:px-0">
       <h1
