@@ -15,7 +15,7 @@ const articles = computed(() => {
 </script>
 
 <template>
-  <div class="flex flex-wrap flex-col mb-12 px-4 lg:px-0">
+  <div class="inline-grid px-4 lg:px-0">
     <h1
       class="mb-5 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
     >Latest Article</h1>
@@ -30,7 +30,7 @@ const articles = computed(() => {
       :to-tags="`/tags/${latest.tags}`"
     />
   </div>
-  <div class="flex flex-col flex-wrap mb-2 px-4 lg:px-0">
+  <div class="flex flex-col flex-wrap mb-2 mt-12 px-4 lg:px-0">
     <div class="grid inline-grid grid-cols-2 mb-5">
       <h1 class="text-3xl font-bold text-elucidator-700 dark:text-dark-repulser-400">All post</h1>
       <router-link

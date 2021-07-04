@@ -13,16 +13,16 @@ const props = defineProps<{
 }>();
 </script>
 <template>
-  <router-link :to="to" class="flex flex-wrap flex-row">
+  <router-link :to="to" class="inline-grid gap-0 md:grid-cols-2">
     <img
       :src="$props.image"
-      class="rounded h-sm object-cover mx-auto w-full lg:w-1/2"
+      class="rounded h-sm object-cover mx-auto w-full"
       :alt="$props.alt"
       :aria-label="$props.alt"
       role="img"
       loading="lazy"
     />
-    <div class="flex flex-col px-5 py-1 sm:w-full lg:w-1/2">
+    <div class="mt-5 flex flex-col lg:px-5 lg:py-1 lg:mt-0">
       <span
         class="mb-2 sm:mt-5 lg:mt-0 text-elucidator-700 dark:text-elucidator-50"
       >Published at {{ $props.date }}</span>
