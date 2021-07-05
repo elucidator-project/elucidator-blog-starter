@@ -13,7 +13,7 @@ const props = defineProps<{
 }>();
 </script>
 <template>
-  <router-link :to="to" class="h-full inline-grid gap-0 sm:grid-cols-2 md:grid-cols-2">
+  <router-link :to="to" class="h-full inline-grid gap-0 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
     <img
       :src="$props.image"
       class="rounded h-sm object-cover mx-auto w-full"
