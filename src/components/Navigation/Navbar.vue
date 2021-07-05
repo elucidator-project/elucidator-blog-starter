@@ -103,12 +103,11 @@ const dataNavbar: NavbarMenu[] = [
           title="repository github"
         >
           <uil-github
-            class="mr-5 flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
-            tabindex="0"
+            class="flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           />
         </a>
         <carbon-menu
-          class="cursor-pointer text-elucidator-700 dark:text-dark-repulser-400 sm:block lg:hidden"
+          class="cursor-pointer text-elucidator-700 dark:text-dark-repulser-400 ml-5 sm:block lg:hidden"
           tabindex="0"
           @click="setOpen"
         />
