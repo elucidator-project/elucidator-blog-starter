@@ -1,5 +1,5 @@
 {
-  "name": "elucidator-starter-blog",
+  "name": "elucidator-blog-starter",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite --port 3333 --open",
