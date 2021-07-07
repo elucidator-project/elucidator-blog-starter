@@ -102,8 +102,6 @@ After finish the build process, you will see dist folder successfully generated.
 
 Elucidator is a kirito's sword from the anime [Sword Art Online(SAO)](https://anilist.co/anime/11757/Sword-Art-Online/), and I like that anime, therefore i named this template with Elucidator :D.
 
-![Kirito](/images/about-elucidator-blog-starter/banner.jpeg)
-
 # Credit
 
 This starter was heavily inspired by [Vitesse](https://github.com/antfu/vitesse).
