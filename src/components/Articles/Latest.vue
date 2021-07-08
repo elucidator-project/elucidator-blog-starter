@@ -22,7 +22,7 @@ const props = defineProps<{
       role="img"
       loading="lazy"
     />
-    <div class="mt-5 flex flex-col lg:px-5 lg:py-1 lg:mt-0">
+    <div class="mt-5 flex flex-col lg:px-5 lg:pt-5 lg:mt-0">
       <span
         class="mb-2 sm:mt-5 lg:mt-0 text-elucidator-700 dark:text-elucidator-50"
       >Published at {{ $props.date }}</span>

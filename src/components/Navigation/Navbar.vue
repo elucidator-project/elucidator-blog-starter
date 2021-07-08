@@ -70,31 +70,38 @@ const dataNavbar: NavbarMenu[] = [
     aria-label="navbar"
   >
     <div class="max-w-screen-lg mx-auto h-full flex flex-row items-center space-x-4">
-      <span class="font-bold lg:tracking-wide text-2xl flex-1">Elucidator blog</span>
+      <div class="logo flex-1">
+        <router-link to="/" class="font-bold lg:tracking-wide text-2xl ">
+            Elucidator Blog
+        </router-link>
+      </div>
       <div class="flex flex-wrap items-center">
         <router-link
           v-for="(data,i) in dataNavbar"
           :key="i"
-          class="mr-5 p-1.5 rounded-lg text-elucidator-700 dark:text-dark-repulser-400 hover:bg-light-400 hidden lg:block"
+          class="mr-5 py-1.5 px-3 rounded-md text-elucidator-700 dark:text-dark-repulser-400 dark:hover:text-elucidator-300 hover:text-gray-900 hidden lg:block"
           :to="data.to"
-          active-class="bg-light-400 dark:text-dark-repulser-800"
+          active-class="bg-gray-200 dark:bg-gray-500 dark:text-dark-repulser-200"
         >{{ data.name }}</router-link>
         <carbon-sun
           v-if="isDark"
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           tabindex="0"
           @click="toggleDark"
+          title="Toggle light mode"
         />
         <carbon-moon
           v-else
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           tabindex="0"
           @click="toggleDark"
+          title="Toggle dark mode"
         />
         <carbon-search
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
           tabindex="0"
           @click="setSearch"
+          title="Search articles.."
         />
         <a
           href="https://github.com/satyawikananda/elucidator-blog-starter"
