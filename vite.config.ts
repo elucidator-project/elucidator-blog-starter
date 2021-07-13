@@ -7,6 +7,7 @@ import Markdown from "vite-plugin-md"
 import matter from "gray-matter"
 import ViteIcons, { ViteIconsResolver } from "vite-plugin-icons"
 import PurgeIcons from "vite-plugin-purge-icons"
+import { VitePWA } from "vite-plugin-pwa"
 import Prism from "markdown-it-prism"
 import anchor from "markdown-it-anchor"
 // @ts-expect-error
@@ -103,6 +104,36 @@ export default defineConfig({
 
     // https://github.com/antfu/purge-icons/tree/main/packages/vite-plugin-purge-icons
     PurgeIcons(),
+
+    // https://github.com/antfu/vite-plugin-pwa
+    VitePWA({
+      includeAssets: ["favicon.ico", "robots.txt"],
+      manifest: {
+        // You can change this name into your own
+        name: "Elucidator Blog Starter",
+        short_name: "Elucidator",
+        description: "A blog starter with Vite.js",
+        theme_color: "#347f76",
+        icons: [
+          {
+            src: "/pwa-assets/192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "/pwa-assets/512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "/pwa-assets/512.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any maskable",
+          },
+        ],
+      },
+    }),
   ],
   optimizeDeps: {
     include: ["vue", "vue-router", "@vueuse/core"],
