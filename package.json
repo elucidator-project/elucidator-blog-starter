@@ -25,7 +25,8 @@
     "vue": "^3.0.5",
     "vue-disqus": "^5.1.0",
     "vue-router": "^4.0.8",
-    "vue-social-sharing": "^4.0.0-alpha4"
+    "vue-social-sharing": "^4.0.0-alpha4",
+    "workbox-window": "^6.1.5"
   },
   "devDependencies": {
     "@iconify/json": "^1.1.353",
@@ -52,6 +53,7 @@
     "vite-plugin-md": "^0.6.7",
     "vite-plugin-pages": "^0.12.2",
     "vite-plugin-purge-icons": "^0.7.0",
+    "vite-plugin-pwa": "^0.8.1",
     "vite-plugin-windicss": "^0.16.7",
     "vite-ssg": "^0.11.2",
     "vue-tsc": "^0.0.24",
