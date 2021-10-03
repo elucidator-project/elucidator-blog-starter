@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 3000:3000    
+    volumes:
+      - ./src:/home/node/app/src
+    networks:
+      - backend
+
+# Docker Networks
+networks:
+  backend:
+    driver: bridge
