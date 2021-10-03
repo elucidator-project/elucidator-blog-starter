@@ -2,7 +2,7 @@
   "name": "elucidator-blog-starter",
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite --port 3333 --open",
+    "dev": "vite --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production vite-ssg build",
     "serve": "vite preview"
   },

@@ -63,6 +63,48 @@ pnpm build
 
 After finish the build process, you will see dist folder successfully generated.
 
+# Working with Docker
+
+## Prerequisites
+
+1. Docker Desktop
+
+You can follow the installation instructions here [https://docs.docker.com/desktop/](https://docs.docker.com/desktop/)
+## Run app on docker
+
+1. Build container
+
+```
+docker-compose up -d
+```
+
+2. Open your browser and go to
+
+```
+http://localhost:3000
+```
+
+<details>
+  <summary>If you want to change the port, see instructions here</summary>
+  <ol>
+    <li>
+        Edit manually Dockerfile at line 32 <br/>
+        <code>
+        EXPOSE 3000 
+        </code>
+    </li>
+    <li>
+        Rebuild container with command <br/>
+        <code>
+        docker-compose up --build
+        </code>
+    </li>
+  </ol>
+</details>
+
+3. Done, try it!
+
+
 # About The Name
 
 Elucidator is a kirito's sword from the anime [Sword Art Online(SAO)](https://anilist.co/anime/11757/Sword-Art-Online/), and I like that anime, therefore i named this template with Elucidator :D.
