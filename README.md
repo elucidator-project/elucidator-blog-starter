@@ -1,7 +1,3 @@
-<div align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <h1>Elucidator blog starter</h1>
 
 <p>Blog starter build with Vue 3 + Vite + Typescript</p>
@@ -124,12 +120,6 @@ Code licensed under [MIT License](https://raw.githubusercontent.com/satyawikanan
 
 This starter was heavily inspired by [Anthony Fu's](https://github.com/antfu) [Vitesse](https://github.com/antfu/vitesse).
 
----
-
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
-![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -149,3 +139,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+---
+
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
+![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)
