@@ -26,6 +26,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ifirmawan",
+      "name": "Iwan firmawan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20871229?v=4",
+      "profile": "https://ifirmawan.github.io",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
