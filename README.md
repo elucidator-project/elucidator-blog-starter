@@ -1,4 +1,7 @@
 <div align="center">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 <h1>Elucidator blog starter</h1>
 
 <p>Blog starter build with Vue 3 + Vite + Typescript</p>
@@ -126,3 +129,23 @@ This starter was heavily inspired by [Anthony Fu's](https://github.com/antfu) [V
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 ![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)
 ![forthebadge](https://forthebadge.com/images/badges/made-with-vue.svg)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://satyawikananda.vercel.app"><img src="https://avatars.githubusercontent.com/u/33148052?v=4?s=100" width="100px;" alt=""/><br /><sub><b>I Gusti Ngurah Satya Wikananda</b></sub></a><br /><a href="https://github.com/satyawikananda/elucidator-blog-starter/commits?author=satyawikananda" title="Code">💻</a> <a href="https://github.com/satyawikananda/elucidator-blog-starter/commits?author=satyawikananda" title="Documentation">📖</a> <a href="#design-satyawikananda" title="Design">🎨</a> <a href="#ideas-satyawikananda" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-satyawikananda" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
