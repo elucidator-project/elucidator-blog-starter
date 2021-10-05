@@ -1,3 +1,5 @@
+<div align="center">
+
 <h1>Elucidator blog starter</h1>
 
 <p>Blog starter build with Vue 3 + Vite + Typescript</p>
