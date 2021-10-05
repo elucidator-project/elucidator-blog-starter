@@ -130,6 +130,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://satyawikananda.vercel.app"><img src="https://avatars.githubusercontent.com/u/33148052?v=4?s=100" width="100px;" alt=""/><br /><sub><b>I Gusti Ngurah Satya Wikananda</b></sub></a><br /><a href="https://github.com/satyawikananda/elucidator-blog-starter/commits?author=satyawikananda" title="Code">💻</a> <a href="https://github.com/satyawikananda/elucidator-blog-starter/commits?author=satyawikananda" title="Documentation">📖</a> <a href="#design-satyawikananda" title="Design">🎨</a> <a href="#ideas-satyawikananda" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-satyawikananda" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://ahmadsaugi.com"><img src="https://avatars.githubusercontent.com/u/45036724?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ahmad Saugi</b></sub></a><br /><a href="https://github.com/satyawikananda/elucidator-blog-starter/commits?author=zuramai" title="Code">💻</a></td>
   </tr>
 </table>
 
