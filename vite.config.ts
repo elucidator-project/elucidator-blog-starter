@@ -1,11 +1,12 @@
 import { defineConfig } from "vite"
 import Vue from "@vitejs/plugin-vue"
 import Pages from "vite-plugin-pages"
-import ViteComponents from "vite-plugin-components"
+import Components from "unplugin-vue-components/vite"
 import WindiCSS from "vite-plugin-windicss"
 import Markdown from "vite-plugin-md"
 import matter from "gray-matter"
-import ViteIcons, { ViteIconsResolver } from "vite-plugin-icons"
+import Icons from "unplugin-icons/vite"
+import IconsResolver from "unplugin-icons/resolver"
 import PurgeIcons from "vite-plugin-purge-icons"
 import { VitePWA } from "vite-plugin-pwa"
 import Prism from "markdown-it-prism"
@@ -19,6 +20,11 @@ import { readFileSync } from "fs"
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    fs: {
+      allow: ['..']
+    }
+  },
   resolve: {
     alias: {
       "~/": `${resolve(__dirname, "src")}/`,
@@ -86,18 +92,21 @@ export default defineConfig({
       },
     }),
 
-    // https://github.com/antfu/vite-plugin-components
-    ViteComponents({
+    // https://github.com/antfu/unplugin-vue-components
+    Components({
       extensions: ["vue", "md"],
-      customLoaderMatcher: (path) => path.endsWith(".md"),
-      customComponentResolvers: [
-        ViteIconsResolver({
-          componentPrefix: "",
-        }),
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+      resolvers: [
+        IconsResolver({
+          prefix: ''
+        })
       ],
+      dts: true
     }),
-    // https://github.com/antfu/vite-plugin-icons
-    ViteIcons(),
+    // https://github.com/antfu/unplugin-icons
+    Icons({
+      compiler: 'vue3'
+    }),
 
     // https://github.com/windicss/vite-plugin-windicss
     WindiCSS(),
