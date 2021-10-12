@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { isClient, useEventListener } from '@vueuse/core';
-import { defineProps, computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { isClient } from '@vueuse/core';
 import { getRelatedArticles } from '~/data';
 import { slug, limitString } from '~/utils'
 import type { DataShare } from '~/types'

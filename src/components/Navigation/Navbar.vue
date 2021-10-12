@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useToggle, onKeyStroke, onClickOutside } from '@vueuse/core'
-import { useRouter } from 'vue-router'
 import { isDark, toggleDark, slug } from '~/utils'
 import type { NavbarMenu } from '~/types'
 

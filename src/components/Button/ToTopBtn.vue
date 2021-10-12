@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useWindowScroll } from '@vueuse/core'
-
 // https://vueuse.org/core/useWindowScroll/
 const { x, y } = useWindowScroll()
 

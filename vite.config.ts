@@ -7,6 +7,7 @@ import Markdown from "vite-plugin-md"
 import matter from "gray-matter"
 import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
+import AutoImport from "unplugin-auto-import/vite"
 import PurgeIcons from "vite-plugin-purge-icons"
 import { VitePWA } from "vite-plugin-pwa"
 import Prism from "markdown-it-prism"
@@ -22,7 +23,7 @@ import { readFileSync } from "fs"
 export default defineConfig({
   server: {
     fs: {
-      allow: ['..']
+      allow: [".."]
     }
   },
   resolve: {
@@ -81,7 +82,7 @@ export default defineConfig({
       ],
       extensions: ["vue", "md"],
       extendRoute(route) {
-        // Get inspired from anthony fu's personal website
+        // Get inspired from anthony fu"s personal website
         // https://github.com/antfu/antfu.me
         const path = resolve(__dirname, route.component.slice(1))
         const md = readFileSync(path, "utf-8")
@@ -98,14 +99,14 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: [
         IconsResolver({
-          prefix: ''
+          prefix: ""
         })
       ],
       dts: true
     }),
     // https://github.com/antfu/unplugin-icons
     Icons({
-      compiler: 'vue3'
+      compiler: "vue3"
     }),
 
     // https://github.com/windicss/vite-plugin-windicss
@@ -142,6 +143,17 @@ export default defineConfig({
           },
         ],
       },
+    }),
+    
+    // https://github.com/antfu/unplugin-auto-import
+    AutoImport({
+      imports: [
+        "vue",
+        "@vueuse/core",
+        "@vueuse/head",
+        "vue-router"
+      ],
+      dts: true,
     }),
   ],
   optimizeDeps: {

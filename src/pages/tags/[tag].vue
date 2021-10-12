@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
 import { getArticlesTags, getParams, paginateData } from '~/data'
 import { slug, limitString } from '~/utils'
 

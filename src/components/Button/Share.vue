@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
 type Icons = "line" | "facebook" | "twitter" | "telegram" | "whatsapp"
 
 const props = defineProps<{

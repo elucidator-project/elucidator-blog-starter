@@ -1,4 +1,3 @@
-import { useRouter } from "vue-router"
 import { usePaginate } from "~/utils/"
 import type { RelatedArticles, PaginateData } from "~/types"
 

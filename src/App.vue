@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { useHead } from "@vueuse/head"
-
 // In this section, we use @vueuse/head. Check this for more detail
 // https://github.com/vueuse/head
 useHead({
