@@ -21,13 +21,14 @@ Elucidator blog starter has several features such as:
 - Next generation utility first CSS framework using [WindiCSS](https://windicss.org)
 - Style with [SCSS](https://sass-lang.com/)
 - File system based route generator using [Vite Plugin Pages](https://github.com/hannoeru/vite-plugin-pages)
-- Auto importing component using [Vite Plugin Component](https://github.com/antfu/vite-plugin-components)
+- Auto importing component using [Unplugin Vue Components](https://github.com/antfu/unplugin-vue-components)
 - Markdown with Vue for Vite using [Vite Plugin Md](https://github.com/antfu/vite-plugin-md)
-- Access thousands icons as Vue component in Vite using [Vite Plugin Icons](https://github.com/antfu/vite-plugin-icons)
+- Access thousands icons as Vue component in Vite using [Unplugin Icons](https://github.com/antfu/unplugin-icons)
 - Progress bar like youtube, github, etc using [Nprogress](https://github.com/rstacruz/nprogress)
 - Code syntax highlighter using [Prismjs](https://prismjs.com/)
 - Comment the article using [Vue Disqus](https://github.com/evillt/vue-cusdis)
 - Share your article using [Vue Social Sharing](https://github.com/nicolasbeauvais/vue-social-sharing)
+- Auto importing several package using [Unplugin Auto Import](https://github.com/antfu/unplugin-auto-import)
 - Typescript support :D
 - Dark mode support :D
 
@@ -63,6 +64,16 @@ pnpm build
 ```
 
 After finish the build process, you will see dist folder successfully generated.
+
+## Install with degit
+You can install this starter with [degit](https://github.com/Rich-Harris/degit).
+```bash
+pnpm i -g degit
+```
+
+```bash
+degit satyawikananda/elucidator-blog-starter your-project-name
+```
 
 # Working with Docker
 
