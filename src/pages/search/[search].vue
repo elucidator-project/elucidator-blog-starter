@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { getArticlesSearch, getParams, paginateData } from '~/data'
-import { unslug, slug, limitString } from '~/utils'
+import { getArticlesSearch, getParams, paginateData } from "~/data"
+import { unslug, slug, limitString } from "~/utils"
 
-const searchParams: any = getParams('search')
+const searchParams: any = getParams("search")
 const search = getArticlesSearch([unslug(searchParams)])
 
 // Get data search paginate
@@ -11,7 +11,7 @@ const dataSearch = computed(() => {
   const paginate = paginateData({
     articles: search,
     currentPage: currentPage.value,
-    pageSize: 3
+    pageSize: 3,
   })
 
   return paginate
@@ -31,15 +31,15 @@ const clickEndPage = () => {
 
 <template>
   <div class="flex flex-col flex-wrap mb-2 px-4 lg:px-0">
-    <h1
-      class="text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
-    >Search: {{ searchParams }} ({{ getArticlesSearch([unslug(searchParams)]).length }})</h1>
+    <h1 class="text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold">
+      Search: {{ searchParams }} ({{ getArticlesSearch([unslug(searchParams)]).length }})
+    </h1>
     <div class="flex flex-col flex-wrap mb-2">
       <div
         class="mx-auto grid inline-grid gap-4 py-10 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2"
       >
         <Article
-          v-for="(data,i) in dataSearch.listArticles"
+          v-for="(data, i) in dataSearch.listArticles"
           :key="i"
           :image="data.meta.frontmatter.thumbnail"
           :alt="`blog-banner-${slug(data.meta.frontmatter.name)}`"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { latestArticle, getArticles } from '~/data'
+import { latestArticle, getArticles } from "~/data"
 import { limitString, slug } from "~/utils"
 
 // Get latest article
@@ -15,9 +15,9 @@ const articles = computed(() => {
 
 <template>
   <div class="inline-grid px-4 lg:px-0">
-    <h1
-      class="mb-5 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold"
-    >Latest Article</h1>
+    <h1 class="mb-5 text-3xl text-elucidator-700 dark:text-dark-repulser-400 font-bold">
+      Latest Article
+    </h1>
     <Latest
       :image="latest.thumbnail"
       :alt="`blog-banner-${slug(latest.name)}`"
@@ -35,7 +35,8 @@ const articles = computed(() => {
       <router-link
         to="/articles"
         class="cursor-pointer text-right my-auto text-elucidator-700 dark:text-dark-repulser-400"
-      >See all</router-link>
+        >See all</router-link
+      >
     </div>
     <div
       class="mx-auto inline-grid gap-4 mb-5 sm:grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-10"

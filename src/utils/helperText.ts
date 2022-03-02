@@ -21,7 +21,6 @@ export const unslug = (str: string): string => {
 export const limitString = (str: string, limit: number): string => {
   const string = str
   const length = limit
-  const result =
-    string.length > length ? string.substring(0, limit) + "..." : string
+  const result = string.length > length ? string.substring(0, limit) + "..." : string
   return result
 }

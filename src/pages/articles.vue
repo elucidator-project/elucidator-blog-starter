@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { getArticles, paginateData } from '~/data'
+import { getArticles, paginateData } from "~/data"
 import { slug, limitString } from "~/utils"
 
 // Get articles data
@@ -9,7 +9,7 @@ const articles = computed(() => {
   const paginate = paginateData({
     articles: articles,
     currentPage: currentPage.value,
-    pageSize: 3
+    pageSize: 3,
   })
 
   return paginate
@@ -31,9 +31,9 @@ const clickEndPage = () => {
 <template>
   <div class="flex flex-col flex-wrap mb-2 px-4 lg:px-0">
     <h1 class="text-elucidator-700 dark:text-dark-repulser-400 font-bold">All Articles</h1>
-    <h3
-      class="mt-1 text-elucidator-700 dark:text-dark-repulser-400"
-    >Total articles: {{ getArticles().length }}</h3>
+    <h3 class="mt-1 text-elucidator-700 dark:text-dark-repulser-400">
+      Total articles: {{ getArticles().length }}
+    </h3>
     <div class="grid inline-grid gap-4 py-6 mb-2 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
       <Article
         v-for="(data, i) in articles.listArticles"

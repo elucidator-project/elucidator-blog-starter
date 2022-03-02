@@ -23,8 +23,8 @@ import { readFileSync } from "fs"
 export default defineConfig({
   server: {
     fs: {
-      allow: [".."]
-    }
+      allow: [".."],
+    },
   },
   resolve: {
     alias: {
@@ -99,14 +99,14 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       resolvers: [
         IconsResolver({
-          prefix: ""
-        })
+          prefix: "",
+        }),
       ],
-      dts: true
+      dts: true,
     }),
     // https://github.com/antfu/unplugin-icons
     Icons({
-      compiler: "vue3"
+      compiler: "vue3",
     }),
 
     // https://github.com/windicss/vite-plugin-windicss
@@ -144,15 +144,10 @@ export default defineConfig({
         ],
       },
     }),
-    
+
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      imports: [
-        "vue",
-        "@vueuse/core",
-        "@vueuse/head",
-        "vue-router"
-      ],
+      imports: ["vue", "@vueuse/core", "@vueuse/head", "vue-router"],
       dts: true,
     }),
   ],

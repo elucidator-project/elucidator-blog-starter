@@ -15,11 +15,21 @@ const props = defineProps<{
 <template>
   <div class="flex flex-wrap flex-row justify-center items-center">
     <div class="flex flex-wrap flex-col sm:w-full lg:w-1/2">
-      <img :src="$props.imageOne" :alt="$props.altOne" class="rounded w-full shadow" loading="lazy" />
+      <img
+        :src="$props.imageOne"
+        :alt="$props.altOne"
+        class="rounded w-full shadow"
+        loading="lazy"
+      />
       <p class="text-center">{{ $props.descOne }}</p>
     </div>
     <div class="flex flex-wrap flex-col sm:w-full lg:w-1/2">
-      <img :src="$props.imageTwo" :alt="$props.altTwo" class="rounded w-full shadow" loading="lazy" />
+      <img
+        :src="$props.imageTwo"
+        :alt="$props.altTwo"
+        class="rounded w-full shadow"
+        loading="lazy"
+      />
       <p class="text-center">{{ $props.descTwo }}</p>
     </div>
     <div class="flex flex-wrap flex-col sm:w-full lg:w-1/2">

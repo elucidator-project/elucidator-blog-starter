@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { isDark, toggleDark, slug } from '~/utils'
-import type { NavbarMenu } from '~/types'
+import { isDark, toggleDark, slug } from "~/utils"
+import type { NavbarMenu } from "~/types"
 
 // https://vueuse.org/shared/useToggle/
 const [search, setSearch] = useToggle()
 const [open, setOpen] = useToggle()
 
 // https://vueuse.org/core/onKeyStroke/
-onKeyStroke('Escape', () => {
+onKeyStroke("Escape", () => {
   search.value = false
 })
-onKeyStroke('Escape', () => {
+onKeyStroke("Escape", () => {
   open.value = false
 })
 
@@ -26,15 +26,14 @@ onClickOutside(navbottom, (e) => {
 })
 
 // Search article
-const searchArticle = ref('')
+const searchArticle = ref("")
 const router = useRouter()
 const goSearch = () => {
   if (searchArticle.value) {
-    router.push(`/search/${slug(searchArticle.value)}`)
-      .then(() => {
-        search.value = false
-        searchArticle.value = ''
-      })
+    router.push(`/search/${slug(searchArticle.value)}`).then(() => {
+      search.value = false
+      searchArticle.value = ""
+    })
   }
 }
 
@@ -46,17 +45,17 @@ router.afterEach(() => {
 // Navbar list
 const dataNavbar: NavbarMenu[] = [
   {
-    name: 'Home',
-    to: '/'
+    name: "Home",
+    to: "/",
   },
   {
-    name: 'Articles',
-    to: '/articles'
+    name: "Articles",
+    to: "/articles",
   },
   {
-    name: 'About',
-    to: '/about'
-  }
+    name: "About",
+    to: "/about",
+  },
 ]
 </script>
 
@@ -68,18 +67,19 @@ const dataNavbar: NavbarMenu[] = [
   >
     <div class="max-w-screen-lg mx-auto h-full flex flex-row items-center space-x-4">
       <div class="logo flex-1">
-        <router-link to="/" class="font-bold lg:tracking-wide text-2xl ">
-            Elucidator Blog
+        <router-link to="/" class="font-bold lg:tracking-wide text-2xl">
+          Elucidator Blog
         </router-link>
       </div>
       <div class="flex flex-wrap items-center">
         <router-link
-          v-for="(data,i) in dataNavbar"
+          v-for="(data, i) in dataNavbar"
           :key="i"
           class="mr-5 py-1.5 px-3 rounded-md text-elucidator-700 dark:text-dark-repulser-400 dark:hover:text-elucidator-300 hover:text-gray-900 hidden lg:block"
           :to="data.to"
           active-class="bg-gray-200 dark:bg-gray-500 dark:text-dark-repulser-200"
-        >{{ data.name }}</router-link>
+          >{{ data.name }}</router-link
+        >
         <carbon-sun
           v-if="isDark"
           class="mr-5 cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
@@ -106,9 +106,7 @@ const dataNavbar: NavbarMenu[] = [
           rel="noreferrer"
           title="repository github"
         >
-          <uil-github
-            class="flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400"
-          />
+          <uil-github class="flex cursor-pointer text-elucidator-700 dark:text-dark-repulser-400" />
         </a>
         <carbon-menu
           class="cursor-pointer text-elucidator-700 dark:text-dark-repulser-400 ml-5 sm:block lg:hidden"
