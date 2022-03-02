@@ -5,5 +5,3 @@ dist-ssr
 *.local
 .env
 .netlify
-components.d.ts
-auto-imports.d.ts
