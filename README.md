@@ -26,7 +26,7 @@ Elucidator blog starter has several features such as:
 - Access thousands icons as Vue component in Vite using [Unplugin Icons](https://github.com/antfu/unplugin-icons)
 - Progress bar like youtube, github, etc using [Nprogress](https://github.com/rstacruz/nprogress)
 - Code syntax highlighter using [Prismjs](https://prismjs.com/)
-- Comment the article using [Vue Disqus](https://github.com/evillt/vue-cusdis)
+- Comment the article using [Vue Disqus](https://github.com/ktquez/vue-disqus)
 - Share your article using [Vue Social Sharing](https://github.com/nicolasbeauvais/vue-social-sharing)
 - Auto importing several package using [Unplugin Auto Import](https://github.com/antfu/unplugin-auto-import)
 - Typescript support :D
